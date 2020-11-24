@@ -1,0 +1,194 @@
+{
+  "channelCreate": {
+    "args": ["channel"],
+    "message": "#${channel.name} was created in [${channel.id}]"
+  },
+  "channelDelete": {
+    "args": ["channel"],
+    "message": "#${channel.name} was created [${channel.id}]"
+  },
+  "channelPinsUpdate": {
+    "args": ["channel", "time"],
+    "message": "#${channel.name}'s pins were updated [${channel.id}]"
+  },
+  "channelUpdate": {
+    "args": ["oldChannel", "newChannel"],
+    "message": "#${newChannel.name} was updated [${channel.id}]"
+  },
+  "debug": {
+    "args": ["info"],
+    "message": "New client debug info: ${info}"
+  },
+  "emojiCreate": {
+    "args": ["emoji"],
+    "message": "The emoji :${emoji.name}: was created [${emoji.id}]"
+  },
+  "emojiDelete": {
+    "args": ["emoji"],
+    "message": "The emoji :${emoji.name}: was deleted [${emoji.id}]"
+  },
+  "emojiUpdate": {
+    "args": ["oldEmoji", "newEmoji"],
+    "message": "The emoji :${newEmoji.name}: was updated [${emoji.id}]"
+  },
+  "error": {
+    "args": ["error"],
+    "message": "New client error: ${error}"
+  },
+  "guildBanAdd": {
+    "args": ["guild", "user"],
+    "message": "${user.tag} was banned in ${guild.name} [${user.id}]"
+  },
+  "guildBanRemove": {
+    "args": ["guild", "user"],
+    "message": "${user.tag} was unbanned in ${guild.name} [${user.id}]"
+  },
+  "guildCreate": {
+    "args": ["guild"],
+    "message": "The client just joined ${guild.name} [${guild.id}]"
+  },
+  "guildDelete": {
+    "args": ["guild"],
+    "message": "The client just left ${guild.name} [${guild.id}]"
+  },
+  "guildIntegrationsUpdate": {
+    "args": ["guild"],
+    "message": "${guild.name}'s integrations were updated [${guild.id}]"
+  },
+  "guildMemberAdd": {
+    "args": ["member"],
+    "message": "${member.user.tag} just joined ${member.guild.id} [${member.id}]"
+  },
+  "guildMemberRemove": {
+    "args": ["member"],
+    "message": "${member.user.tag} just left ${member.guild.id} [${member.id}]"
+  },
+  "guildMembersChunk": {
+    "args": ["members", "guild", "chunk"],
+    "message": "A chunk of ${members.size} members were recieved in ${guild.name} [${guild.id}]"
+  },
+  "guildMemberSpeaking": {
+    "args": ["member", "speaking"],
+    "message": "${member.user.tag} just started/stopped speaking in ${member.voice.channel.name} in ${member.guild.name} [${member.id}]"
+  },
+  "guildMemberUpdate": {
+    "args": ["oldMember", "newMember"],
+    "message": "${newMember.user.tag} was updated [${newMember.id}]"
+  },
+  "guildUnavailable": {
+    "args": ["guild"],
+    "message": "${guild.name} has become unavailable [${guild.id}]"
+  },
+  "guildUpdate": {
+    "args": ["oldGuild", "newGuild"],
+    "message": "${newGuild.name} was updated [${newGuild.id}]"
+  },
+  "invalidated": {
+    "args": [],
+    "message": "The client's session has been invalidated"
+  },
+  "inviteCreate": {
+    "args": ["invite"],
+    "message": "${invite.url} has been created in #${invite.channel.name} [${invite.channel.id}]"
+  },
+  "inviteDelete": {
+    "args": ["invite"],
+    "message": "${invite.url} has been deleted from #${invite.channel.name} [${invite.channel.id}]"
+  },
+  "message": {
+    "args": ["message"],
+    "message": "${message.author.tag} sent a new message in #${message.channel.name}${message.content ? `\"${message.content}\"` : ''} [${message.id}]"
+  },
+  "messageDelete": {
+    "args": ["message"],
+    "message": "${message.author.tag}'s message in #${message.channel.name} has been deleted${message.content ? `\"${message.content}\"` : ''} [${message.id}]"
+  },
+  "messageDeleteBulk": {
+    "args": ["messages"],
+    "message": "${messages.size} messages have been deleted in #${message.channel.name} [${message.channel.id}]"
+  },
+  "messageReactionAdd": {
+    "args": ["reaction", "user"],
+    "message": "${user.tag} added the reaction ${reaction.emoji.name} on${reaction.message.content ? `: \"${reaction.message.content\"` : ' A message with no content'} [${reaction.emoji.id}]"
+  },
+  "messageReactionRemove": {
+    "args": ["reaction", "user"],
+    "message": "${user.tag} removed the reaction ${reaction.emoji.name} from${reaction.message.content ? `: \"${reaction.message.content\"` : ' A message with no content'} [${reaction.emoji.id}]"
+  },
+  "messageReactionRemoveAll": {
+    "args": ["message"],
+    "message": "All reactions were removed from ${message.author.tag}'s message${reaction.message.content ? `: \"${reaction.message.content\"` : ' (with no content)'} [${message.id}]"
+  },
+  "messageReactionRemoveEmoji": {
+    "args": ["reaction"],
+    "message": "A bot removed the emoji ${reaction.emoji.name} from${reaction.message.content ? `: \"${reaction.message.content\"` : ' A message with no content'} [${reaction.emoji.id}]"
+  },
+  "messageUpdate": {
+    "args": ["oldMessage", "newMessage"],
+    "message": "${newMessage.author}'s message${reaction.message.content ? `: \"${reaction.message.content\"` : ' (with no content)'} was updated [${message.id}]"
+  },
+  "presenceUpdate": {
+    "args": ["oldPresence", "newPresence"],
+    "message": "${newPresence.member.user.tag}'s presence was updated [${newPresence.member.id}]"
+  },
+  "rateLimit": {
+    "args": ["rateLimitInfo"],
+    "message": "The client hit a rate limit: ${rateLimitInfo}"
+  },
+  "ready": {
+    "args": [],
+    "message": "The client is online"
+  },
+  "roleCreate": {
+    "args": ["role"],
+    "message": "The role ${role.name} was created in ${role.guild.name} [${role.id}]"
+  },
+  "roleDelete": {
+    "args": ["role"],
+    "message": "The role ${role.name} was deleted from ${role.guild.name} [${role.id}]"
+  },
+  "roleUpdate": {
+    "args": ["oldRole", "newRole"],
+    "message": "The role ${newRole.name} was updated in ${role.guild.name} [${role.guild.name}]"
+  },
+  "shardDisconnect": {
+    "args": ["event", "id"],
+    "message": "A shard's WebSocket disconnected with code ${event.code} [${id}]"
+  },
+  "shardError": {
+    "args": ["error", "shardID"],
+    "message": "A shard's WebSocket encountered a connection error. Reason: ${error.message}. Stack: ${error.stack}. [${shardID}]"
+  },
+  "shardReady": {
+    "args": ["id", "unavailableGuilds"],
+    "message": "Shard ${id} is ready [${id}]"
+  },
+  "shardReconnecting": {
+    "args": ["id"],
+    "message": "Shard ${id} is attempting to reconnect [${id}]"
+  },
+  "shardResume": {
+    "args": ["id", "replayedEvents"],
+    "message": "Shard ${id} resumed and replayed ${replayedEvents} events [${id}]"
+  },
+  "typingStart": {
+    "args": ["channel", "user"],
+    "message": "${user.tag} started typing in ${channel.name} [${user.id}]"
+  },
+  "userUpdate": {
+    "args": ["oldUser", "newUser"],
+    "message": "${newUser.tag} was updated [${newUser.id}]"
+  },
+  "voiceStateUdate": {
+    "args": ["oldState", "newState"],
+    "message": "${newState.member.user.tag}'s VoiceState was updated [${newState.member.id}]"
+  },
+  "warn": {
+    "args": ["info"],
+    "message": "New client warn info: ${info}"
+  },
+  "webhookUpdate": {
+    "args": ["channel"],
+    "message": "A webhook in ${channel.name} was updated [${channel.id}]"
+  }
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "component": "command",
+    "args": [
+      {
+        "name": "*"
+      },
+      {
+        "match": "RegExp"
+      }
+    ]
+  },
+  {
+    "component": "event",
+    "args": [
+      {
+        "name": [
+          "channelCreate",
+          "channelDelete",
+          "guildBanRemove",
+          "guildUnavailable",
+          "guildDelete",
+          "emojiCreate",
+          "emojiDelete",
+          "emojiUpdate",
+          "guildIntegrationsUpdate",
+          "guildMemberRemove",
+          "roleCreate",
+          "roleDelete",
+          "roleUpdate",
+          "guildUpdate",
+          "inviteCreate",
+          "inviteDelete",
+          "message",
+          "messageDelete",
+          "messageDeleteBulk",
+          "messageReactionAdd",
+          "messageReactionRemove",
+          "messageReactionRemoveAll",
+          "messageReactionRemoveEmoji",
+          "presenceUpdate",
+          "typingStart",
+          "userUpdate",
+          "voiceStateUpdate",
+          "webhookUpdate",
+          "warn",
+          "debug",
+          "guildMemberSpeaking",
+          "channelPinsUpdate",
+          "channelUpdate",
+          "guildBanAdd",
+          "guildCreate",
+          "guildMemberAdd",
+          "guildMemberUpdate",
+          "guildMembersChunk",
+          "messageUpdate",
+          "shardResume",
+          "shardReady",
+          "shardDisconnect",
+          "shardReconnecting",
+          "invalidated",
+          "ready",
+          "shardError",
+          "rateLimit",
+          "error"
+        ]
+      }
+    ]
+  },
+  {
+    "component": "bot",
+    "args": []
+  }
+]
